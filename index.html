@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastor Alemão</title>
+    <style>
+        /* Estilo geral da página */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #3e4a59;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 2rem;
+            color: #333;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .info {
+            width: 48%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        .alert {
+            background-color: #ff9800;
+            padding: 15px;
+            border-radius: 5px;
+            display: none;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #3e4a59;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Pastor Alemão</h1>
+</header>
+
+<div class="container">
+    <section class="intro">
+        <h2 class="section-title">Introdução</h2>
+        <p>O Pastor Alemão é uma das raças de cães mais populares no mundo, conhecido por sua inteligência, lealdade e versatilidade. Eles são excelentes cães de companhia, mas também desempenham papéis importantes em atividades profissionais, como trabalho policial, resgate e cães-guia.</p>
+    </section>
+
+    <section class="content">
+        <div class="info">
+            <h3>Características</h3>
+            <ul>
+                <li><strong>Temperamento:</strong> Leal, inteligente e protetor.</li>
+                <li><strong>Altura:</strong> 55 a 65 cm.</li>
+                <li><strong>Peso:</strong> 22 a 40 kg.</li>
+                <li><strong>Expectativa de vida:</strong> 9 a 13 anos.</li>
+                <li><strong>Pelagem:</strong> Curta ou longa, com cores como preto, dourado e marrom.</li>
+            </ul>
+        </div>
+        <div class="info">
+            <h3>História</h3>
+            <p>A raça foi desenvolvida no final do século XIX na Alemanha, sendo inicialmente usada como cão de pastoreio. Ao longo dos anos, os Pastores Alemães se tornaram famosos por sua habilidade em diversas funções, incluindo cães de serviço e policiais, devido à sua inteligência e facilidade de treinamento.</p>
+        </div>
+    </section>
+
+    <!-- Seção do botão e alerta -->
+    <section>
+        <button class="button" onclick="mostrarAlerta()">Saiba Mais</button>
+        <div id="alert" class="alert">
+            <p>Sabia que o Pastor Alemão é uma das raças mais inteligentes do mundo, ocupando o 3º lugar no ranking de inteligência canina?</p>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2025 - Todos os direitos reservados.</p>
+</footer>
+
+<script>
+    // Função que exibe o alerta ao clicar no botão
+    function mostrarAlerta() {
+        var alerta = document.getElementById("alert");
+        alerta.style.display = "block"; // Torna o alerta visível
+    }
+</script>
+
+</body>
+</html>
+
